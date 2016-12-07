@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+}
+
+.article-sidebar {
+  margin-top: 20px;
+  margin-left: 1%;
+  width: 25%;
+  display: inline-block;
+  border-right: 1px solid gray;
+  position: absolute;
+}
+
+.bottom-container .projects-list .text {
+  float: right;
+  width: 70%;
+  display: inline-block;
+  color: black;
+}
