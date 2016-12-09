@@ -20,6 +20,7 @@ group :development, :test do
   gem 'launchy'
   gem 'factory_girl'
   gem 'valid_attribute'
+  gem 'dotenv-rails'
   gem 'shoulda-matchers', require: false
 end
 
