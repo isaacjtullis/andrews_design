@@ -1,0 +1,12 @@
+<div class="contact-form">
+  <div class="form-container">
+    <%= simple_form_for @user do |f| %>
+      <div class="form-fields">
+        <%= f.input :first_name, required: true, placeholder: 'First Name', label: false %>
+        <%= f.input :last_name, required: true, placeholder: 'Last Name', label: false %>
+        <%= f.input :email, required: true, placeholder: 'Email', label: false %>
+        <%= f.submit 'Submit' %>
+      </div>
+    <% end %>
+  </div>
+</div>

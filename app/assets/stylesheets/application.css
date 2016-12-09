@@ -16,7 +16,7 @@
 
  .cover-photo {
    width: 100%;
-   height: 510px;
+   height: 500px;
  }
 
  .cover-photo img {
@@ -60,17 +60,21 @@
  }
 
  .contact-text {
-   color: white;
-   font-family: Gotham SSm, sans-serif;
+   left: 90%;
+   margin-top: 50px;
+   border: .5px solid white;
+   padding: 1.5em 2.5em;
    font-size: 10px;
    letter-spacing: .5em;
    line-height: 1em;
-   padding: 1.5em 2.5em;
-   margin-top: 50px;
-   left: 90%;
-   border: .5px solid white;
    position: absolute;
    transform: translate(-50%, -50%);
+ }
+
+ .contact-text a {
+   color: white;
+   font-family: Gotham SSm, sans-serif;
+   text-decoration: none;
  }
 
 /*
