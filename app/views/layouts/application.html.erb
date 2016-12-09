@@ -6,6 +6,8 @@
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
   </head>
 
   <body>
@@ -13,9 +15,11 @@
       <img src="http://www.hdwallpapers.org/download/finland-pier-fog-2880x1800.jpg" alt="">
         <div id="text">Andrews Design</div>
         <div class="about-us-text"><%= link_to 'About Us', '#about-us' %></div>
-        <div class="contact-text">Contact</div>
+        <div class="contact-text"><%= link_to 'Contact', '#contact-us' %>
       </div>
     </div>
+
+    <%= flash[:notice] %>
     <%= yield %>
   </body>
 </html>

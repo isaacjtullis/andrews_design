@@ -1,20 +1,30 @@
 <link rel="stylesheet" href="home.css" />
 
-<div class="article-sidebar">
-  <div class="text">
-    <%= 'We are a botique agency that develops clean simple user friendly websites' %>
-  </div>
-</div>
-
-
-
-<%= "This is our team" %>
 <div id="about-us">
   <img src="assets/isaac.png" alt="">
   <img src="assets/tyler.png" alt="">
   <img src="assets/mary.png" alt="">
 </div>
+</div>
 
+<div id="container">
+  <div class="article-sidebar">
+    <div class="text">
+      <%= 'We design and build simple, clean and functional websites.' %>
+      <%= 'Give us an email to see our work' %>
+    </div>
+  </div>
+</div>
+
+<div class="contact-button">
+  <%= 'Contact Us' %>
+</div>
 <div id="contact-us">
-  <%='Projects we have worked on:'%>
+  <%= render 'form' %>
+</div>
+
+
+<div class="footer">
+  <%= link_to '-LinkedIn', '#' %>
+  <%= link_to 'GitHub-', '#'%>
 </div>
