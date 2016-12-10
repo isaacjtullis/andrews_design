@@ -2,6 +2,7 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
   config.action_mailer.delivery_method = :smtp
   #config.action_mailer.default_url_options = { :host => ENV["HEROKU_WEBSITE"] }
+
   ActionMailer::Base.smtp_settings = {
     :user_name => ENV["SEND_GRID_USERNAME"],
     :password => ENV["SEND_GRID_PASSWORD"],
@@ -11,6 +12,7 @@ Rails.application.configure do
     :authentication => :plain,
     :enable_starttls_auto => true
   }
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
