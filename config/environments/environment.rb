@@ -1,6 +1,7 @@
 ActionMailer::Base.smtp_settings = {
-  :user_name => ENV["sendgrid_username"],
-  :password => ENV["sendgrid_password"],
+  :user_name => ENV["SEND_GRID_USERNAME"],
+  :password => ENV["SEND_GRID_PASSWORD"],
+  :key => ENV["SEND_GRID_KEY"],
   :domain => ENV["andrews-design.herokuapp.com"],
   :address => 'smtp.sendgrid.net',
   :port => 587,
