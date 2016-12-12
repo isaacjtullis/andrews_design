@@ -1,8 +1,9 @@
-class ProjectsController < ApplicationController
+class AdminsController < ApplicationController
+
   def index
-    @user = User.new
     @mary = Admin.find(3)
     @tyler = Admin.find(2)
     @isaac = Admin.find(1)
+    render :layout => 'layouts/admin'
   end
 end

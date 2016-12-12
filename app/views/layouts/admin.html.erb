@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AndrewsDesign</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+  </head>
+
+  <body>
+    <div class="cover-photo">
+      <img src="http://wallpaper.pickywallpapers.com/2560x1440/minimal-blue-tron.jpg" alt="">
+    </div>
+    <%= flash[:notice] %>
+    <%= yield %>
+  </body>
+</html>
