@@ -1,28 +1,39 @@
 <link rel="stylesheet" href="home.css" />
 
 <div id="about-us">
-  <img src="https://media.licdn.com/media/AAEAAQAAAAAAAAdiAAAAJGQ4NDdkZGM5LTA5MGItNDQ5Mi04NmNiLWQyZjk3MTY5MmIyNA.jpg" alt="">
-  <img src="https://media.licdn.com/media/AAEAAQAAAAAAAAgmAAAAJGE5ZDlhYTg3LTQ3Y2QtNGUyMi04MzZlLTAxYTY4ZWM5YWE4MA.jpg" alt="">
-  <img src="https://media.licdn.com/media/p/8/005/053/397/1feba1b.jpg" alt="">
-</div>
-</div>
-
-<div id="container">
-  <div class="article-sidebar">
-    <div class="text">
-      <%= 'We design and build simple, clean and functional websites.' %>
-      <%= 'Give us an email to see our work' %>
-    </div>
+  <div class="img-container">
+    <img src="https://media.licdn.com/media/AAEAAQAAAAAAAAdiAAAAJGQ4NDdkZGM5LTA5MGItNDQ5Mi04NmNiLWQyZjk3MTY5MmIyNA.jpg" alt="">
+    <p><%= link_to "#{@mary.first_name} #{@mary.last_name}", admins_path %></p>
+  </div>
+  <div class="img-container">
+    <img src="https://media.licdn.com/media/AAEAAQAAAAAAAAgmAAAAJGE5ZDlhYTg3LTQ3Y2QtNGUyMi04MzZlLTAxYTY4ZWM5YWE4MA.jpg" alt="">
+    <p><%= link_to "#{@tyler.first_name} #{@tyler.last_name}", admins_path %></p>
+  </div>
+  <div class="img-container">
+    <img src="https://media.licdn.com/media/p/8/005/053/397/1feba1b.jpg" alt="">
+    <p><%= link_to "#{@isaac.first_name} #{@isaac.last_name}", admins_path %></p>
   </div>
 </div>
 
-<div class="contact-button">
-  <%= 'Contact Us' %>
-</div>
-<div id="contact-us">
-  <%= render 'form' %>
+<div id="current-projects-container">
+  <div class="text">
+    <%= 'We are a start to finish team that helps build an idea from the ground up.' %></br>
+    <%= 'Checkout our projects here:' %>
+    <li><%= link_to 'City In A Day', 'https://www.city-in-a-day.herokuapp.com'%></li>
+    <li><%= link_to 'PicGram', 'https://www.picgram.herokuapp.com' %></li>
+    <li><%= link_to 'All Thats Local', 'https://www.all-thats-local.herokuapp.com' %></li>
+  </div>
 </div>
 
+<div class="contact-container">
+  <div class="contact-button">
+    <%= 'Contact Us' %>
+  </div>
+
+  <div id="contact-us">
+    <%= render 'form' %>
+  </div>
+</div>
 
 <div class="footer">
   <%= link_to '-LinkedIn', '#' %>
