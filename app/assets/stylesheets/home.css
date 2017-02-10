@@ -8,6 +8,7 @@ body {
 }
 
 #about-us img {
+  text-align: center;
   width: 200px;
   border-radius: 50%;
   margin-left: 175px;
@@ -58,7 +59,7 @@ body {
 .contact-button {
  margin: auto;
  margin-bottom: 40px;
- width: 10%;
+ width: 20%;
  border: 1px solid black;
  text-align: center;
  font-family: "Raleway";
@@ -69,11 +70,12 @@ body {
  font-weight: 500;
  font-style: normal;
  padding: 15px;
+ text-align: center;
 }
 
 #contact-us {
+  text-align: center;
   color: black;
-  position: relative;
 }
 
 .contact-form {
